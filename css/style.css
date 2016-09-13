@@ -8,28 +8,242 @@ body, html {
     box-sizing: border-box;
 }
 
-.connect-board {
+header, .jumbotron, main {
+    width: 100%;
+    max-width: 1366px;
     margin: 0 auto;
-    width: 980px;
+    position: relative;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.container:after, .row:after, .clearfix:after, header:after , .jumbotron:after , main:after {
+    clear: both;
+    content: " ";
+    display: table;
+}
+
+/*Nav and Header*/
+
+header {
+    padding-top: 15px;
+}
+
+.logo {
+    display: inline-block;
+    float: left;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+nav {
+    float: left;
+    margin-left: 30px;
+    line-height: 2.5rem;
+    font-size: 1.5rem;
+}
+
+nav>ul.nav {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav>ul.nav>li {
+    display: block;
+    float: left;
+    padding-right: 15px;
+}
+
+nav>ul.nav>li.active>a::after {
+    content: " ";
+    display: block;
+    border-bottom: 2px solid #bd3330;
+    transition: all .25s;
+}
+
+nav>ul.nav>li>a:link, nav>ul.nav>li>a:visited {
+    color: #000;
+    text-decoration: none;
+    transition: all .25s;
+}
+
+nav>ul.nav>li>a:hover, nav>ul.nav>li>a:focus, nav>ul.nav>li.active>a:link, nav>ul.nav>li.active>a:visited  {
+    color: #bd3330;
+}
+
+.head-connect-container {
+    background-color: #2980b9;
+    position: absolute;
+    text-align: center;
+    top: -100px;
+    z-index: -10;
+    left: 0;
+    right: 0;
+}
+
+.head-connect-row {
+    position: relative;
+}
+
+.head-connect-cell {
+    display: inline-block;
+    margin: 10px 15px;
+    width: 150px;
+    height: 150px;
+    border-radius: 75px;
+    background-color: #fff;
+}
+
+.head-connect-cell.red {
+    background: #bd3330;
+    border: #913230 double 30px;
+}
+
+.head-connect-cell.yellow {
+    background: #feff39;
+    border: #cccc2d double 30px;
+}
+
+.jumbotron .content {
+    padding: 30px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, .33)
+}
+
+.jumbotron {
+    color: #fff;
+    overflow: hidden;
+}
+
+.jumbotron h1 {
+    font-size: 4rem;
+}
+
+.jumbotron h1>small {
+    font-size: 2.5rem
+}
+
+.sm-connect-container {
+    display: inline-block;
+    margin: 15px;
+    background-color: #2980b9;
+}
+
+.sm-connect-cell {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin: 5px;
+    background-color: #fff;
+    border-radius: 10px;
+    position: relative;
+}
+
+.sm-connect-cell.win::before {
+    content: " ";
+    display: block;
+    position: absolute;
+    margin: -7px;
+    width: 30px;
+    height: 30px;
+    background: rgba(255, 255, 255, .33);
+}
+
+.sm-connect-cell.yellow {
+    background: #feff39;
+}
+
+.sm-connect-cell.red {
+    background: #bd3330;
+}
+
+/*Skeleton */
+
+.three-col, .two-col, .one-col {
+    float: left;
+}
+
+@media screen and (min-width: 768px) {
+    .three-col {
+        width: 33.3333333%;
+        padding-right: 15px;
+    }
+
+    .two-col {
+        width: 50%;
+        padding-right: 15px;
+    }
+
+    .one-col {
+        width: 100%;
+    }
+}
+
+/*Conect 4 - Play Now Css*/
+
+.connect-container {
+    margin: 0 auto;
+    max-width: 1366px;
+    width: 100%;
+    text-align: center;
+    color: #000;
+}
+
+.connect-container>button {
+    font-weight: bold;
+    font-size: 1.25rem;
+    background: red;
+    padding: 15px 25px;
+    color: #fff;
+}
+
+.connect-board {
+    margin-left: 25px;
+    margin-right: 25px;
+    margin: 0 auto;
+    width: 1100px;
     height: 950px;
     padding: 30px;
-    border: 5px solid black;
-    background-color: yellow;
+    text-align: left;
+    background-color: #2980b9;
+    position: relative;
+}
+
+.connect-leg {
+    width: 25px;
+    height: 900px;
+    background: #2980b9;
+    position: absolute;
+    bottom: -100px;
+}
+
+.connect-leg.left {
+    left: -25px;
+    border-right: ridge #2980b9;
+}
+
+.connect-leg.right {
+    right: -25px;
+    border-left: ridge #2980b9;
 }
 
 
 .connect-cell {
-    margin: 15px 15px 35px 15px;
+    margin: 15px 25px 35px 25px;
     width: 100px;
     height: 100px;
     position: relative;
     float: left;
     background: #fff;
     border-radius: 50px;
-
 }
 
 .connect-row {
+    margin-left: -15px;
+    margin-right: -15px;
     clear: both;
 }
 
@@ -46,11 +260,12 @@ body, html {
     top: 0;
     left: 0;
     z-index: 5;
+    text-indent: -15px;
 }
 
 .btn .blue {
     position: absolute;
-    text-indent: 25px;
+    text-indent: 17px;
     width: 50px;
     height: 100px;
     display: block;
@@ -79,11 +294,11 @@ body, html {
     right: 0;
     width: 50px;
     height: 100px;
-    border-top: 20px double darkred;
-    border-bottom: 20px double darkred;
-    border-left: 20px double darkred;
+    border-top: 20px double #913230;
+    border-bottom: 20px double #913230;
+    border-left: 20px double #913230;
     border-radius: 50px 0 0 50px; 
-    background: red;
+    background: #bd3330 url('../images/crown.png') 5px center no-repeat;
     z-index: -3;
 }
 
@@ -95,12 +310,12 @@ body, html {
     width: 50px;
     top: 0;
     right: 0;
-    border-right: 20px double darkblue;
-    border-top: 20px double darkblue;
-    border-bottom: 20px double darkblue;
+    border-right: 20px double #cccc2d;
+    border-top: 20px double #cccc2d;
+    border-bottom: 20px double #cccc2d;
     border-radius: 0 50px 50px 0; 
     z-index: -4;
-    background: blue;
+    background: #feff39 url('../images/crown.png') -25px center no-repeat;
 }
 
 .btn .clear:hover::before {
@@ -143,22 +358,22 @@ label.red::after, label.blue::after {
     border-radius: 50px;
     position: absolute;
     top: -1500px;
-    transition: top ease-in .3s;
+    transition: top ease-in .5s;
 }
 
 .btn input.red-input[type=radio]:checked ~ label.red::after {
     position: absolute;
     top: 0;
-    border: darkred double 20px;
-    background: red;
+    border: #913230 double 20px;
+    background: #bd3330 url('../images/crown.png') center no-repeat;
     z-index: -13;
 }
 
 .btn input.blue-input[type=radio]:checked ~ label.blue::after {
     top: 0;
     left: -50px;
-    border: darkblue double 20px;
-    background: blue;
+    border: #cccc2d double 20px;
+    background: #feff39 url('../images/crown.png') center no-repeat;
     z-index: -14;
 }
 

@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html lang="en">
     <head>
         <meta charset="UTF-8">
         <title>Connect Four</title>
@@ -8,16 +8,19 @@
     </head>
     <body>
         <header>
-            <div class="logo">
-                <span>Connect 4</span>
+            <div class="container">
+                <div class="logo">
+                    <span>Connect 4</span>
+                </div>
+                <nav>
+                    <ul class="nav">
+                        <li class="active"><a href="/~jadams50/projects/project-1/index.html">Home</a></li>
+                        <li><a href="#how-to-play">How To Play</a></li>
+                        <li><a href="#strategy">Strategies</a></li>
+                        <li><a href="/~jadams50/projects/project-1/play.html">Play Now</a></li>
+                    </ul>
+                </nav>
             </div>
-            <nav>
-                <ul class="nav">
-                    <li class="active"><a href="/~jadams50/projects/project-1/index.html">Home</a></li>
-                    <li><a href="#how-to-play">How To Play</a></li>
-                    <li><a href="/~jadams50/projects/project-1/play.html">Play Now</a></li>
-                </ul>
-            </nav>
         </header>
         <div class="jumbotron">
             <div class="head-connect-container">
@@ -56,199 +59,681 @@
         </div>
         <main>
         <div id="how-to-play">
+            <section>
+                <div class="container">
+                    <div class="row">
+                        <div class="one-col">
+                            <div class="section-headline text-center">
+                                <h2>How to Play Connect 4</h2>
+                                <p>What are the rules of connect four and how do you win?</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="one-col">
+                            <h3>Objective - How to Win</h3>
+                            <p>The Object of connect four is to be the first player to get four of your colored markers in a row. This can be horizontally, vertically, or diagnally</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="three-col text-center">
+                            <div class="sm-connect-container">
+                                <div class="sm-connect-leg left"></div>
+                                <div class="sm-connect-leg right"></div>
+                                <div class="sm-connect-row">
+                                    <span class="sm-connect-cell"></span>
+                                    <span class="sm-connect-cell"></span>
+                                    <span class="sm-connect-cell"></span>
+                                    <span class="sm-connect-cell"></span>
+                                    <span class="sm-connect-cell"></span>
+                                    <span class="sm-connect-cell"></span>
+                                    <span class="sm-connect-cell"></span>
+                                </div>
+                                <div class="sm-connect-row">
+                                    <span class="sm-connect-cell"></span>
+                                    <span class="sm-connect-cell"></span>
+                                    <span class="sm-connect-cell"></span>
+                                    <span class="sm-connect-cell"></span>
+                                    <span class="sm-connect-cell"></span>
+                                    <span class="sm-connect-cell"></span>
+                                    <span class="sm-connect-cell"></span>
+                                </div>
+                                <div class="sm-connect-row">
+                                    <span class="sm-connect-cell"></span>
+                                    <span class="sm-connect-cell"></span>
+                                    <span class="sm-connect-cell"></span>
+                                    <span class="sm-connect-cell yellow"></span>
+                                    <span class="sm-connect-cell"></span>
+                                    <span class="sm-connect-cell"></span>
+                                    <span class="sm-connect-cell"></span>
+                                </div>
+                                <div class="sm-connect-row">
+                                    <span class="sm-connect-cell"></span>
+                                    <span class="sm-connect-cell yellow"></span>
+                                    <span class="sm-connect-cell red"></span>
+                                    <span class="sm-connect-cell yellow"></span>
+                                    <span class="sm-connect-cell"></span>
+                                    <span class="sm-connect-cell"></span>
+                                    <span class="sm-connect-cell"></span>
+                                </div>
+                                <div class="sm-connect-row">
+                                    <span class="sm-connect-cell"></span>
+                                    <span class="sm-connect-cell red"></span>
+                                    <span class="sm-connect-cell yellow"></span>
+                                    <span class="sm-connect-cell red"></span>
+                                    <span class="sm-connect-cell"></span>
+                                    <span class="sm-connect-cell"></span>
+                                    <span class="sm-connect-cell"></span>
+                                </div>
+                                <div class="sm-connect-row">
+                                    <span class="sm-connect-cell red win"></span>
+                                    <span class="sm-connect-cell red win"></span>
+                                    <span class="sm-connect-cell red win"></span>
+                                    <span class="sm-connect-cell red win"></span>
+                                    <span class="sm-connect-cell yellow"></span>
+                                    <span class="sm-connect-cell yellow"></span>
+                                    <span class="sm-connect-cell yellow"></span>
+                                </div>
+                            </div><br>
+                            <span>Horizontal Victory</span>
+                        </div>
+                        <div class="three-col text-center">
+                            <div class="sm-connect-container">
+                                <div class="sm-connect-leg left"></div>
+                                <div class="sm-connect-leg right"></div>
+                                <div class="sm-connect-row">
+                                    <span class="sm-connect-cell"></span>
+                                    <span class="sm-connect-cell"></span>
+                                    <span class="sm-connect-cell"></span>
+                                    <span class="sm-connect-cell"></span>
+                                    <span class="sm-connect-cell"></span>
+                                    <span class="sm-connect-cell"></span>
+                                    <span class="sm-connect-cell"></span>
+                                </div>
+                                <div class="sm-connect-row">
+                                    <span class="sm-connect-cell"></span>
+                                    <span class="sm-connect-cell"></span>
+                                    <span class="sm-connect-cell"></span>
+                                    <span class="sm-connect-cell"></span>
+                                    <span class="sm-connect-cell"></span>
+                                    <span class="sm-connect-cell"></span>
+                                    <span class="sm-connect-cell"></span>
+                                </div>
+                                <div class="sm-connect-row">
+                                    <span class="sm-connect-cell"></span>
+                                    <span class="sm-connect-cell"></span>
+                                    <span class="sm-connect-cell"></span>
+                                    <span class="sm-connect-cell red win"></span>
+                                    <span class="sm-connect-cell"></span>
+                                    <span class="sm-connect-cell"></span>
+                                    <span class="sm-connect-cell"></span>
+                                </div>
+                                <div class="sm-connect-row">
+                                    <span class="sm-connect-cell"></span>
+                                    <span class="sm-connect-cell yellow"></span>
+                                    <span class="sm-connect-cell red"></span>
+                                    <span class="sm-connect-cell red win"></span>
+                                    <span class="sm-connect-cell"></span>
+                                    <span class="sm-connect-cell"></span>
+                                    <span class="sm-connect-cell"></span>
+                                </div>
+                                <div class="sm-connect-row">
+                                    <span class="sm-connect-cell"></span>
+                                    <span class="sm-connect-cell red"></span>
+                                    <span class="sm-connect-cell yellow"></span>
+                                    <span class="sm-connect-cell red win"></span>
+                                    <span class="sm-connect-cell yellow"></span>
+                                    <span class="sm-connect-cell"></span>
+                                    <span class="sm-connect-cell"></span>
+                                </div>
+                                <div class="sm-connect-row">
+                                    <span class="sm-connect-cell red"></span>
+                                    <span class="sm-connect-cell yellow"></span>
+                                    <span class="sm-connect-cell red"></span>
+                                    <span class="sm-connect-cell red win"></span>
+                                    <span class="sm-connect-cell yellow"></span>
+                                    <span class="sm-connect-cell yellow"></span>
+                                    <span class="sm-connect-cell yellow"></span>
+                                </div>
+                            </div><br>
+                            <span>Vertical Victory</span>
+                        </div>
+                        <div class="three-col text-center">
+                            <div class="sm-connect-container">
+                                <div class="sm-connect-leg left"></div>
+                                <div class="sm-connect-leg right"></div>
+                                <div class="sm-connect-row">
+                                    <span class="sm-connect-cell"></span>
+                                    <span class="sm-connect-cell"></span>
+                                    <span class="sm-connect-cell"></span>
+                                    <span class="sm-connect-cell"></span>
+                                    <span class="sm-connect-cell"></span>
+                                    <span class="sm-connect-cell"></span>
+                                    <span class="sm-connect-cell"></span>
+                                </div>
+                                <div class="sm-connect-row">
+                                    <span class="sm-connect-cell"></span>
+                                    <span class="sm-connect-cell"></span>
+                                    <span class="sm-connect-cell"></span>
+                                    <span class="sm-connect-cell"></span>
+                                    <span class="sm-connect-cell"></span>
+                                    <span class="sm-connect-cell"></span>
+                                    <span class="sm-connect-cell"></span>
+                                </div>
+                                <div class="sm-connect-row">
+                                    <span class="sm-connect-cell"></span>
+                                    <span class="sm-connect-cell"></span>
+                                    <span class="sm-connect-cell"></span>
+                                    <span class="sm-connect-cell red win"></span>
+                                    <span class="sm-connect-cell"></span>
+                                    <span class="sm-connect-cell"></span>
+                                    <span class="sm-connect-cell"></span>
+                                </div>
+                                <div class="sm-connect-row">
+                                    <span class="sm-connect-cell"></span>
+                                    <span class="sm-connect-cell yellow"></span>
+                                    <span class="sm-connect-cell red win"></span>
+                                    <span class="sm-connect-cell red"></span>
+                                    <span class="sm-connect-cell"></span>
+                                    <span class="sm-connect-cell"></span>
+                                    <span class="sm-connect-cell"></span>
+                                </div>
+                                <div class="sm-connect-row">
+                                    <span class="sm-connect-cell"></span>
+                                    <span class="sm-connect-cell red win"></span>
+                                    <span class="sm-connect-cell yellow"></span>
+                                    <span class="sm-connect-cell yellow"></span>
+                                    <span class="sm-connect-cell red"></span>
+                                    <span class="sm-connect-cell"></span>
+                                    <span class="sm-connect-cell"></span>
+                                </div>
+                                <div class="sm-connect-row">
+                                    <span class="sm-connect-cell red win"></span>
+                                    <span class="sm-connect-cell red"></span>
+                                    <span class="sm-connect-cell yellow"></span>
+                                    <span class="sm-connect-cell red"></span>
+                                    <span class="sm-connect-cell yellow"></span>
+                                    <span class="sm-connect-cell yellow"></span>
+                                    <span class="sm-connect-cell yellow"></span>
+                                </div>
+                            </div><br>
+                            <span>Diagonal Victory</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="play-rules">
+                <div class="container">
+                    <div class="row">
+                        <h3>How to Play:</h3>
+                    </div>
+                    <ol>
+                        <li>
+                            <div class="row">
+                                <div class="two-col">
+                                    <span>Decide who is going to play what color, and who will go first. Players will alternate after each move.</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="row">
+                                <div class="two-col">
+                                    <span>When it is your turn, place a checker for your color in the lowest available row for the column you wish to place your marker in.</span>
+                                </div>
+                                <div class="two-col text-center">
+                                    <span class="sm-connect-cell red"></span><br>
+                                    <div class="sm-connect-container">
+                                        <div class="sm-connect-leg left"></div>
+                                        <div class="sm-connect-leg right"></div>
+                                        <div class="sm-connect-row">
+                                            <span class="sm-connect-cell"></span>
+                                            <span class="sm-connect-cell"></span>
+                                            <span class="sm-connect-cell"></span>
+                                            <span class="sm-connect-cell"></span>
+                                            <span class="sm-connect-cell"></span>
+                                            <span class="sm-connect-cell"></span>
+                                            <span class="sm-connect-cell"></span>
+                                        </div>
+                                        <div class="sm-connect-row">
+                                            <span class="sm-connect-cell"></span>
+                                            <span class="sm-connect-cell"></span>
+                                            <span class="sm-connect-cell"></span>
+                                            <span class="sm-connect-cell"></span>
+                                            <span class="sm-connect-cell"></span>
+                                            <span class="sm-connect-cell"></span>
+                                            <span class="sm-connect-cell"></span>
+                                        </div>
+                                        <div class="sm-connect-row">
+                                            <span class="sm-connect-cell"></span>
+                                            <span class="sm-connect-cell"></span>
+                                            <span class="sm-connect-cell"></span>
+                                            <span class="sm-connect-cell"></span>
+                                            <span class="sm-connect-cell"></span>
+                                            <span class="sm-connect-cell"></span>
+                                            <span class="sm-connect-cell"></span>
+                                        </div>
+                                        <div class="sm-connect-row">
+                                            <span class="sm-connect-cell"></span>
+                                            <span class="sm-connect-cell"></span>
+                                            <span class="sm-connect-cell"></span>
+                                            <span class="sm-connect-cell"></span>
+                                            <span class="sm-connect-cell"></span>
+                                            <span class="sm-connect-cell"></span>
+                                            <span class="sm-connect-cell"></span>
+                                        </div>
+                                        <div class="sm-connect-row">
+                                            <span class="sm-connect-cell"></span>
+                                            <span class="sm-connect-cell"></span>
+                                            <span class="sm-connect-cell"></span>
+                                            <span class="sm-connect-cell"></span>
+                                            <span class="sm-connect-cell"></span>
+                                            <span class="sm-connect-cell"></span>
+                                            <span class="sm-connect-cell"></span>
+                                        </div>
+                                        <div class="sm-connect-row">
+                                            <span class="sm-connect-cell"></span>
+                                            <span class="sm-connect-cell"></span>
+                                            <span class="sm-connect-cell"></span>
+                                            <span class="sm-connect-cell win"></span>
+                                            <span class="sm-connect-cell"></span>
+                                            <span class="sm-connect-cell"></span>
+                                            <span class="sm-connect-cell"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="row">
+                                <div class="two-col">
+                                    <span>After the first player "drops" their checker it will alternate to the next players turn. They will drop their checker in a similar manner.</span>
+                                </div>
+                                <div class="two-col text-center">
+                                    <span class="sm-connect-cell yellow"></span><br>
+                                    <div class="sm-connect-container">
+                                        <div class="sm-connect-leg left"></div>
+                                        <div class="sm-connect-leg right"></div>
+                                        <div class="sm-connect-row">
+                                            <span class="sm-connect-cell"></span>
+                                            <span class="sm-connect-cell"></span>
+                                            <span class="sm-connect-cell"></span>
+                                            <span class="sm-connect-cell"></span>
+                                            <span class="sm-connect-cell"></span>
+                                            <span class="sm-connect-cell"></span>
+                                            <span class="sm-connect-cell"></span>
+                                        </div>
+                                        <div class="sm-connect-row">
+                                            <span class="sm-connect-cell"></span>
+                                            <span class="sm-connect-cell"></span>
+                                            <span class="sm-connect-cell"></span>
+                                            <span class="sm-connect-cell"></span>
+                                            <span class="sm-connect-cell"></span>
+                                            <span class="sm-connect-cell"></span>
+                                            <span class="sm-connect-cell"></span>
+                                        </div>
+                                        <div class="sm-connect-row">
+                                            <span class="sm-connect-cell"></span>
+                                            <span class="sm-connect-cell"></span>
+                                            <span class="sm-connect-cell"></span>
+                                            <span class="sm-connect-cell"></span>
+                                            <span class="sm-connect-cell"></span>
+                                            <span class="sm-connect-cell"></span>
+                                            <span class="sm-connect-cell"></span>
+                                        </div>
+                                        <div class="sm-connect-row">
+                                            <span class="sm-connect-cell"></span>
+                                            <span class="sm-connect-cell"></span>
+                                            <span class="sm-connect-cell"></span>
+                                            <span class="sm-connect-cell"></span>
+                                            <span class="sm-connect-cell"></span>
+                                            <span class="sm-connect-cell"></span>
+                                            <span class="sm-connect-cell"></span>
+                                        </div>
+                                        <div class="sm-connect-row">
+                                            <span class="sm-connect-cell"></span>
+                                            <span class="sm-connect-cell"></span>
+                                            <span class="sm-connect-cell"></span>
+                                            <span class="sm-connect-cell win"></span>
+                                            <span class="sm-connect-cell"></span>
+                                            <span class="sm-connect-cell"></span>
+                                            <span class="sm-connect-cell"></span>
+                                        </div>
+                                        <div class="sm-connect-row">
+                                            <span class="sm-connect-cell"></span>
+                                            <span class="sm-connect-cell"></span>
+                                            <span class="sm-connect-cell"></span>
+                                            <span class="sm-connect-cell red"></span>
+                                            <span class="sm-connect-cell"></span>
+                                            <span class="sm-connect-cell"></span>
+                                            <span class="sm-connect-cell"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="row">
+                                <div class="two-col">
+                                    <span>Players will continue to alternate until one player is able to get 4 of their checkers in a row. As stated above, this can be horizontally, vertically, or diagonally.</span>
+                                </div>
+                                <div class="two-col text-center">
+                                    <div class="sm-connect-container">
+                                        <div class="sm-connect-leg left"></div>
+                                        <div class="sm-connect-leg right"></div>
+                                        <div class="sm-connect-row">
+                                            <span class="sm-connect-cell"></span>
+                                            <span class="sm-connect-cell"></span>
+                                            <span class="sm-connect-cell"></span>
+                                            <span class="sm-connect-cell"></span>
+                                            <span class="sm-connect-cell"></span>
+                                            <span class="sm-connect-cell"></span>
+                                            <span class="sm-connect-cell"></span>
+                                        </div>
+                                        <div class="sm-connect-row">
+                                            <span class="sm-connect-cell"></span>
+                                            <span class="sm-connect-cell red"></span>
+                                            <span class="sm-connect-cell"></span>
+                                            <span class="sm-connect-cell"></span>
+                                            <span class="sm-connect-cell"></span>
+                                            <span class="sm-connect-cell"></span>
+                                            <span class="sm-connect-cell"></span>
+                                        </div>
+                                        <div class="sm-connect-row">
+                                            <span class="sm-connect-cell red win"></span>
+                                            <span class="sm-connect-cell yellow"></span>
+                                            <span class="sm-connect-cell yellow"></span>
+                                            <span class="sm-connect-cell yellow"></span>
+                                            <span class="sm-connect-cell red"></span>
+                                            <span class="sm-connect-cell"></span>
+                                            <span class="sm-connect-cell"></span>
+                                        </div>
+                                        <div class="sm-connect-row">
+                                            <span class="sm-connect-cell yellow"></span>
+                                            <span class="sm-connect-cell red win"></span>
+                                            <span class="sm-connect-cell red"></span>
+                                            <span class="sm-connect-cell yellow"></span>
+                                            <span class="sm-connect-cell red"></span>
+                                            <span class="sm-connect-cell"></span>
+                                            <span class="sm-connect-cell"></span>
+                                        </div>
+                                        <div class="sm-connect-row">
+                                            <span class="sm-connect-cell red"></span>
+                                            <span class="sm-connect-cell yellow"></span>
+                                            <span class="sm-connect-cell red win"></span>
+                                            <span class="sm-connect-cell yellow"></span>
+                                            <span class="sm-connect-cell yellow"></span>
+                                            <span class="sm-connect-cell yellow"></span>
+                                            <span class="sm-connect-cell red"></span>
+                                        </div>
+                                        <div class="sm-connect-row">
+                                            <span class="sm-connect-cell yellow"></span>
+                                            <span class="sm-connect-cell red"></span>
+                                            <span class="sm-connect-cell red"></span>
+                                            <span class="sm-connect-cell red win"></span>
+                                            <span class="sm-connect-cell yellow"></span>
+                                            <span class="sm-connect-cell red"></span>
+                                            <span class="sm-connect-cell yellow"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="row">
+                                <div class="two-col">
+                                    <span>The first player to get 4 checkers in a row is the winner.</span>
+                                </div>
+                            </div>
+                        </li>
+                    </ol>
+                </div>
+            </section>
+            <section id="strategy">
+                <div class="container">
+                    <div class="row">
+                        <div class="one-col">
+                            <div class="section-headline text-center">
+                                <h2>Strategies for Play</h2>
+                                <p>Tips for maximizing your chances of winning.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <ul class="list-unstyled  text-center">
+                            <li class="three-col">
+                                <div class="sm-connect-container">
+                                    <div class="sm-connect-leg left"></div>
+                                    <div class="sm-connect-leg right"></div>
+                                    <div class="sm-connect-row">
+                                        <span class="sm-connect-cell"></span>
+                                        <span class="sm-connect-cell"></span>
+                                        <span class="sm-connect-cell"></span>
+                                        <span class="sm-connect-cell"></span>
+                                        <span class="sm-connect-cell"></span>
+                                        <span class="sm-connect-cell"></span>
+                                        <span class="sm-connect-cell"></span>
+                                    </div>
+                                    <div class="sm-connect-row">
+                                        <span class="sm-connect-cell"></span>
+                                        <span class="sm-connect-cell"></span>
+                                        <span class="sm-connect-cell"></span>
+                                        <span class="sm-connect-cell"></span>
+                                        <span class="sm-connect-cell"></span>
+                                        <span class="sm-connect-cell"></span>
+                                        <span class="sm-connect-cell"></span>
+                                    </div>
+                                    <div class="sm-connect-row">
+                                        <span class="sm-connect-cell"></span>
+                                        <span class="sm-connect-cell"></span>
+                                        <span class="sm-connect-cell"></span>
+                                        <span class="sm-connect-cell"></span>
+                                        <span class="sm-connect-cell"></span>
+                                        <span class="sm-connect-cell"></span>
+                                        <span class="sm-connect-cell"></span>
+                                    </div>
+                                    <div class="sm-connect-row">
+                                        <span class="sm-connect-cell"></span>
+                                        <span class="sm-connect-cell"></span>
+                                        <span class="sm-connect-cell"></span>
+                                        <span class="sm-connect-cell"></span>
+                                        <span class="sm-connect-cell"></span>
+                                        <span class="sm-connect-cell"></span>
+                                        <span class="sm-connect-cell"></span>
+                                    </div>
+                                    <div class="sm-connect-row">
+                                        <span class="sm-connect-cell"></span>
+                                        <span class="sm-connect-cell"></span>
+                                        <span class="sm-connect-cell"></span>
+                                        <span class="sm-connect-cell yellow"></span>
+                                        <span class="sm-connect-cell yellow"></span>
+                                        <span class="sm-connect-cell"></span>
+                                        <span class="sm-connect-cell"></span>
+                                    </div>
+                                    <div class="sm-connect-row">
+                                        <span class="sm-connect-cell"></span>
+                                        <span class="sm-connect-cell win"></span>
+                                        <span class="sm-connect-cell red"></span>
+                                        <span class="sm-connect-cell red"></span>
+                                        <span class="sm-connect-cell red"></span>
+                                        <span class="sm-connect-cell win"></span>
+                                        <span class="sm-connect-cell"></span>
+                                    </div>
+                                </div><br>
+                                <h3>Think Ahead</h3>
+                                <span>Try and think ahead of your opponent. Trap them to where you have two ways to win and they can only block one.</span>
+                                <ul>
+                                    <li><strong>Note:</strong> This also means thinking ahead and not trapping yourself by filling in a square that would help your oppenent win before you can.</li>
+                                </ul>
+                            </li>
+                            <li class="three-col">
+                                <div class="sm-connect-container">
+                                    <div class="sm-connect-leg left"></div>
+                                    <div class="sm-connect-leg right"></div>
+                                    <div class="sm-connect-row">
+                                        <span class="sm-connect-cell"></span>
+                                        <span class="sm-connect-cell"></span>
+                                        <span class="sm-connect-cell"></span>
+                                        <span class="sm-connect-cell"></span>
+                                        <span class="sm-connect-cell"></span>
+                                        <span class="sm-connect-cell"></span>
+                                        <span class="sm-connect-cell"></span>
+                                    </div>
+                                    <div class="sm-connect-row">
+                                        <span class="sm-connect-cell"></span>
+                                        <span class="sm-connect-cell"></span>
+                                        <span class="sm-connect-cell"></span>
+                                        <span class="sm-connect-cell"></span>
+                                        <span class="sm-connect-cell"></span>
+                                        <span class="sm-connect-cell"></span>
+                                        <span class="sm-connect-cell"></span>
+                                    </div>
+                                    <div class="sm-connect-row">
+                                        <span class="sm-connect-cell win"></span>
+                                        <span class="sm-connect-cell"></span>
+                                        <span class="sm-connect-cell"></span>
+                                        <span class="sm-connect-cell"></span>
+                                        <span class="sm-connect-cell"></span>
+                                        <span class="sm-connect-cell"></span>
+                                        <span class="sm-connect-cell win"></span>
+                                    </div>
+                                    <div class="sm-connect-row">
+                                        <span class="sm-connect-cell"></span>
+                                        <span class="sm-connect-cell win"></span>
+                                        <span class="sm-connect-cell"></span>
+                                        <span class="sm-connect-cell"></span>
+                                        <span class="sm-connect-cell"></span>
+                                        <span class="sm-connect-cell win"></span>
+                                        <span class="sm-connect-cell"></span>
+                                    </div>
+                                    <div class="sm-connect-row">
+                                        <span class="sm-connect-cell"></span>
+                                        <span class="sm-connect-cell"></span>
+                                        <span class="sm-connect-cell win"></span>
+                                        <span class="sm-connect-cell"></span>
+                                        <span class="sm-connect-cell win"></span>
+                                        <span class="sm-connect-cell"></span>
+                                        <span class="sm-connect-cell"></span>
+                                    </div>
+                                    <div class="sm-connect-row">
+                                        <span class="sm-connect-cell win"></span>
+                                        <span class="sm-connect-cell win"></span>
+                                        <span class="sm-connect-cell win"></span>
+                                        <span class="sm-connect-cell red"></span>
+                                        <span class="sm-connect-cell win"></span>
+                                        <span class="sm-connect-cell win"></span>
+                                        <span class="sm-connect-cell win"></span>
+                                    </div>
+                                </div><br>
+                                <h3>Control the Center</h3>
+                                <span>It is from here that you will have the most oppertunities to make a connection in any direction.</span>
+                                <ul>
+                                    <li><strong>Note:</strong> To futher this point, in a game where both players are playing a "perfect game", the player who goes first, and places their first checker in the middle slot will always win.</li>
+                                </ul>
+                            </li>
+                            <li class="three-col">
+                                <div class="sm-connect-container">
+                                    <div class="sm-connect-leg left"></div>
+                                    <div class="sm-connect-leg right"></div>
+                                    <div class="sm-connect-row">
+                                        <span class="sm-connect-cell"></span>
+                                        <span class="sm-connect-cell"></span>
+                                        <span class="sm-connect-cell"></span>
+                                        <span class="sm-connect-cell"></span>
+                                        <span class="sm-connect-cell"></span>
+                                        <span class="sm-connect-cell"></span>
+                                        <span class="sm-connect-cell"></span>
+                                    </div>
+                                    <div class="sm-connect-row">
+                                        <span class="sm-connect-cell"></span>
+                                        <span class="sm-connect-cell"></span>
+                                        <span class="sm-connect-cell"></span>
+                                        <span class="sm-connect-cell"></span>
+                                        <span class="sm-connect-cell"></span>
+                                        <span class="sm-connect-cell"></span>
+                                        <span class="sm-connect-cell"></span>
+                                    </div>
+                                    <div class="sm-connect-row">
+                                        <span class="sm-connect-cell"></span>
+                                        <span class="sm-connect-cell"></span>
+                                        <span class="sm-connect-cell"></span>
+                                        <span class="sm-connect-cell"></span>
+                                        <span class="sm-connect-cell"></span>
+                                        <span class="sm-connect-cell win"></span>
+                                        <span class="sm-connect-cell"></span>
+                                    </div>
+                                    <div class="sm-connect-row">
+                                        <span class="sm-connect-cell"></span>
+                                        <span class="sm-connect-cell win"></span>
+                                        <span class="sm-connect-cell red"></span>
+                                        <span class="sm-connect-cell red"></span>
+                                        <span class="sm-connect-cell red"></span>
+                                        <span class="sm-connect-cell win"></span>
+                                        <span class="sm-connect-cell"></span>
+                                    </div>
+                                    <div class="sm-connect-row">
+                                        <span class="sm-connect-cell"></span>
+                                        <span class="sm-connect-cell"></span>
+                                        <span class="sm-connect-cell yellow"></span>
+                                        <span class="sm-connect-cell red"></span>
+                                        <span class="sm-connect-cell yellow"></span>
+                                        <span class="sm-connect-cell"></span>
+                                        <span class="sm-connect-cell"></span>
+                                    </div>
+                                    <div class="sm-connect-row">
+                                        <span class="sm-connect-cell"></span>
+                                        <span class="sm-connect-cell"></span>
+                                        <span class="sm-connect-cell red"></span>
+                                        <span class="sm-connect-cell yellow"></span>
+                                        <span class="sm-connect-cell yellow"></span>
+                                        <span class="sm-connect-cell yellow"></span>
+                                        <span class="sm-connect-cell"></span>
+                                    </div>
+                                </div><br>
+                                <h3>Setup a win from multiple directions</h3>
+                                <span>Do your best to set up a three checkers in a row that can connect in multiple directions at once.</span>
+                                <ul>
+                                    <li><strong>Note:</strong> It us however up to your opponent to see the trap comming, and stop it.</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section id="play-now">
+                <div class="container">
+                    <div class="row">
+                        <div class="one-col text-center">
+                            <div class="section-headline">
+                                <h2>Play Now</h2>
+                                <p>Now that you have the basics down, its time to play!</p>
+                            </div>
+                            <p></p>
+                            <a href="./play.html" class="btn">Click Here<br>To Play Now</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        </main>
+        <footer>
             <div class="container">
                 <div class="row">
-                    <div class="one-col">
-                        <h2>How to Play Connect 4</h2>
+                    <div class="two-col">
+                        <div class="copyright">
+                            <span>Connect 4<sup>&reg;</sup> is a owned propert of Milton Bradley/Hasbro.<br>
+                            I do not claim any ownership of connect 4.</span>
+                        </div>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="one-col">
-                        <h3>Objective - How to Win</h3>
-                        <p>The Object of connect four is to be the first player to get four of your colored markers in a row. This can be horizontally, vertically, or diagnally</p>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="three-col text-center">
-                        <div class="sm-connect-container">
-                            <div class="sm-connect-row">
-                                <span class="sm-connect-cell"></span>
-                                <span class="sm-connect-cell"></span>
-                                <span class="sm-connect-cell"></span>
-                                <span class="sm-connect-cell"></span>
-                                <span class="sm-connect-cell"></span>
-                                <span class="sm-connect-cell"></span>
-                                <span class="sm-connect-cell"></span>
-                            </div>
-                            <div class="sm-connect-row">
-                                <span class="sm-connect-cell"></span>
-                                <span class="sm-connect-cell"></span>
-                                <span class="sm-connect-cell"></span>
-                                <span class="sm-connect-cell"></span>
-                                <span class="sm-connect-cell"></span>
-                                <span class="sm-connect-cell"></span>
-                                <span class="sm-connect-cell"></span>
-                            </div>
-                            <div class="sm-connect-row">
-                                <span class="sm-connect-cell"></span>
-                                <span class="sm-connect-cell"></span>
-                                <span class="sm-connect-cell"></span>
-                                <span class="sm-connect-cell yellow"></span>
-                                <span class="sm-connect-cell"></span>
-                                <span class="sm-connect-cell"></span>
-                                <span class="sm-connect-cell"></span>
-                            </div>
-                            <div class="sm-connect-row">
-                                <span class="sm-connect-cell"></span>
-                                <span class="sm-connect-cell yellow"></span>
-                                <span class="sm-connect-cell red"></span>
-                                <span class="sm-connect-cell yellow"></span>
-                                <span class="sm-connect-cell"></span>
-                                <span class="sm-connect-cell"></span>
-                                <span class="sm-connect-cell"></span>
-                            </div>
-                            <div class="sm-connect-row">
-                                <span class="sm-connect-cell"></span>
-                                <span class="sm-connect-cell red"></span>
-                                <span class="sm-connect-cell yellow"></span>
-                                <span class="sm-connect-cell red"></span>
-                                <span class="sm-connect-cell"></span>
-                                <span class="sm-connect-cell"></span>
-                                <span class="sm-connect-cell"></span>
-                            </div>
-                            <div class="sm-connect-row">
-                                <span class="sm-connect-cell red win"></span>
-                                <span class="sm-connect-cell red win"></span>
-                                <span class="sm-connect-cell red win"></span>
-                                <span class="sm-connect-cell red win"></span>
-                                <span class="sm-connect-cell yellow"></span>
-                                <span class="sm-connect-cell yellow"></span>
-                                <span class="sm-connect-cell yellow"></span>
-                            </div>
-                        </div><br>
-                        <span>Horizontal Victory</span>
-                    </div>
-                    <div class="three-col text-center">
-                        <div class="sm-connect-container">
-                            <div class="sm-connect-row">
-                                <span class="sm-connect-cell"></span>
-                                <span class="sm-connect-cell"></span>
-                                <span class="sm-connect-cell"></span>
-                                <span class="sm-connect-cell"></span>
-                                <span class="sm-connect-cell"></span>
-                                <span class="sm-connect-cell"></span>
-                                <span class="sm-connect-cell"></span>
-                            </div>
-                            <div class="sm-connect-row">
-                                <span class="sm-connect-cell"></span>
-                                <span class="sm-connect-cell"></span>
-                                <span class="sm-connect-cell"></span>
-                                <span class="sm-connect-cell"></span>
-                                <span class="sm-connect-cell"></span>
-                                <span class="sm-connect-cell"></span>
-                                <span class="sm-connect-cell"></span>
-                            </div>
-                            <div class="sm-connect-row">
-                                <span class="sm-connect-cell"></span>
-                                <span class="sm-connect-cell"></span>
-                                <span class="sm-connect-cell"></span>
-                                <span class="sm-connect-cell red win"></span>
-                                <span class="sm-connect-cell"></span>
-                                <span class="sm-connect-cell"></span>
-                                <span class="sm-connect-cell"></span>
-                            </div>
-                            <div class="sm-connect-row">
-                                <span class="sm-connect-cell"></span>
-                                <span class="sm-connect-cell yellow"></span>
-                                <span class="sm-connect-cell red"></span>
-                                <span class="sm-connect-cell red win"></span>
-                                <span class="sm-connect-cell"></span>
-                                <span class="sm-connect-cell"></span>
-                                <span class="sm-connect-cell"></span>
-                            </div>
-                            <div class="sm-connect-row">
-                                <span class="sm-connect-cell"></span>
-                                <span class="sm-connect-cell red"></span>
-                                <span class="sm-connect-cell yellow"></span>
-                                <span class="sm-connect-cell red win"></span>
-                                <span class="sm-connect-cell yellow"></span>
-                                <span class="sm-connect-cell"></span>
-                                <span class="sm-connect-cell"></span>
-                            </div>
-                            <div class="sm-connect-row">
-                                <span class="sm-connect-cell red"></span>
-                                <span class="sm-connect-cell yellow"></span>
-                                <span class="sm-connect-cell red"></span>
-                                <span class="sm-connect-cell red win"></span>
-                                <span class="sm-connect-cell yellow"></span>
-                                <span class="sm-connect-cell yellow"></span>
-                                <span class="sm-connect-cell yellow"></span>
-                            </div>
-                        </div><br>
-                        <span>Vertical Victory</span>
-                    </div>
-                    <div class="three-col text-center">
-                        <div class="sm-connect-container">
-                            <div class="sm-connect-row">
-                                <span class="sm-connect-cell"></span>
-                                <span class="sm-connect-cell"></span>
-                                <span class="sm-connect-cell"></span>
-                                <span class="sm-connect-cell"></span>
-                                <span class="sm-connect-cell"></span>
-                                <span class="sm-connect-cell"></span>
-                                <span class="sm-connect-cell"></span>
-                            </div>
-                            <div class="sm-connect-row">
-                                <span class="sm-connect-cell"></span>
-                                <span class="sm-connect-cell"></span>
-                                <span class="sm-connect-cell"></span>
-                                <span class="sm-connect-cell"></span>
-                                <span class="sm-connect-cell"></span>
-                                <span class="sm-connect-cell"></span>
-                                <span class="sm-connect-cell"></span>
-                            </div>
-                            <div class="sm-connect-row">
-                                <span class="sm-connect-cell"></span>
-                                <span class="sm-connect-cell"></span>
-                                <span class="sm-connect-cell"></span>
-                                <span class="sm-connect-cell red win"></span>
-                                <span class="sm-connect-cell"></span>
-                                <span class="sm-connect-cell"></span>
-                                <span class="sm-connect-cell"></span>
-                            </div>
-                            <div class="sm-connect-row">
-                                <span class="sm-connect-cell"></span>
-                                <span class="sm-connect-cell yellow"></span>
-                                <span class="sm-connect-cell red win"></span>
-                                <span class="sm-connect-cell red"></span>
-                                <span class="sm-connect-cell"></span>
-                                <span class="sm-connect-cell"></span>
-                                <span class="sm-connect-cell"></span>
-                            </div>
-                            <div class="sm-connect-row">
-                                <span class="sm-connect-cell"></span>
-                                <span class="sm-connect-cell red win"></span>
-                                <span class="sm-connect-cell yellow"></span>
-                                <span class="sm-connect-cell yellow"></span>
-                                <span class="sm-connect-cell red"></span>
-                                <span class="sm-connect-cell"></span>
-                                <span class="sm-connect-cell"></span>
-                            </div>
-                            <div class="sm-connect-row">
-                                <span class="sm-connect-cell red win"></span>
-                                <span class="sm-connect-cell red"></span>
-                                <span class="sm-connect-cell yellow"></span>
-                                <span class="sm-connect-cell red"></span>
-                                <span class="sm-connect-cell yellow"></span>
-                                <span class="sm-connect-cell yellow"></span>
-                                <span class="sm-connect-cell yellow"></span>
-                            </div>
-                        </div><br>
-                        <span>Diagonal Victory</span>
+                    <div class="pull-right">
+                        <ul class="footer-nav">
+                            <li><a href="/~jadams50/projects/project-1/index.html">Home</a></li>
+                            <li><a href="#how-to-play">How To Play</a></li>
+                            <li><a href="#strategy">Strategies</a></li>
+                            <li><a href="/~jadams50/projects/project-1/play.html">Play Now</a></li>
+                        </ul>
                     </div>
                 </div>
             </div>
-        </div>
-        </main>
+        </footer>
     </body>
 </html>

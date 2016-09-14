@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html lang="en">
     <head>
         <meta charset="UTF-8">
         <title>Connect 4 Board Game</title>
@@ -7,19 +7,32 @@
     </head>
     <body>
         <header>
-            <div class="logo">
-                <span>Connect 4</span>
+            <div class="container">
+                <div class="logo">
+                    <span>Connect 4</span>
+                </div>
+                <nav>
+                    <ul class="nav">
+                        <li><a href="/~jadams50/projects/project-1/index.html">Home</a></li>
+                        <li><a href="/~jadams50/projects/project-1/index.html#how-to-play">How To Play</a></li>
+                        <li><a href="/~jadams50/projects/project-1/index.html#strategy">Strategies</a></li>
+                        <li  class="active"><a href="/~jadams50/projects/project-1/play.html">Play Now</a></li>
+                    </ul>
+                </nav>
             </div>
-            <nav>
-                <ul class="nav">
-                    <li><a href="/~jadams50/projects/project-1/index.html">Home</a></li>
-                    <li><a href="#how-to-play">How To Play</a></li>
-                    <li class="active"><a href="/~jadams50/projects/project-1/play.html">Play Now</a></li>
-                </ul>
-            </nav>
         </header>
         <main>
-        <form action="" class="connect-container">
+        <div class="container">
+            <div class="page-header text-center">
+                <h1>Play Connect Four</h1>
+                <p>Play against yourself, or with a friend</p>
+            </div>
+        </div>
+        <form class="connect-container">
+            <div class="bottom-fill">
+                <h2>Remember to fill from the bottom!</h2>
+            </div>
+            <div class="down-arrow"></div>
             <div class="connect-board">
                 <div class="connect-leg left"></div>
                 <div class="connect-row row-one">
@@ -456,8 +469,31 @@
                 </div>
                 <div class="connect-leg right"></div>
             </div>
-            <button type="reset" value="Reset">Reset</button>
+            <div class="reset">
+                <h3>Press below to reset the game</h3>
+                <button type="reset" value="Reset">Reset</button>
+            </div>
         </form>
         </main>
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="two-col">
+                        <div class="copyright">
+                            <span>Connect 4<sup>&reg;</sup> is a owned propert of Milton Bradley/Hasbro.<br>
+                            I do not claim any ownership of connect 4.</span>
+                        </div>
+                    </div>
+                    <div class="pull-right">
+                        <ul class="footer-nav">
+                            <li><a href="/~jadams50/projects/project-1/index.html">Home</a></li>
+                            <li><a href="#how-to-play">How To Play</a></li>
+                            <li><a href="#strategy">Strategies</a></li>
+                            <li><a href="/~jadams50/projects/project-1/play.html">Play Now</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
     </body>
 </html>
